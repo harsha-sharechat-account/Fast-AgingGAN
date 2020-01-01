@@ -11,9 +11,10 @@ It's mostly inspired by the [Identity Preserved Face Aging](http://openaccess.th
 
 # Design
 The following image shows the adversarial training setup. The orange arrows denote the path where backprop to the generator happens.
-<p align="center">
 
-  ![Fast-AgingGAN](https://user-images.githubusercontent.com/4294680/71646087-5fd13a80-2ce2-11ea-8d5b-055d202ad1f1.png)
+<p align="center">
+  
+![Fast-AgingGAN](https://user-images.githubusercontent.com/4294680/71646087-5fd13a80-2ce2-11ea-8d5b-055d202ad1f1.png)
 
 </p>
 
