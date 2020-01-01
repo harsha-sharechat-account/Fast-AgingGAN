@@ -11,8 +11,11 @@ It's mostly inspired by the [Identity Preserved Face Aging](http://openaccess.th
 
 # Design
 The following image shows the adversarial training setup. The orange arrows denote the path where backprop to the generator happens.
+<p align="center">
 
-![Fast-AgingGAN](https://user-images.githubusercontent.com/4294680/71646087-5fd13a80-2ce2-11ea-8d5b-055d202ad1f1.png)
+  ![Fast-AgingGAN](https://user-images.githubusercontent.com/4294680/71646087-5fd13a80-2ce2-11ea-8d5b-055d202ad1f1.png)
+
+</p>
 
 # Requirements
 To install the required packages, use the requirements text file like so:
@@ -40,7 +43,10 @@ Model checkpoints and training summaries are saved in the directory. You can sta
 If you do not have a pretrained age classifier in the models director called 'age_classifier.h5', pre-training will automatically run to train a classifier which will be used for training the generator later.
 
 # Samples
+The pretrained model was trained with a small classifier loss, you can increase the aging effect by weighing the loss higher during training. Zoom in to the faces to see the subtle changes. One thing that should be noticed is how well the background is preserved, and also the face identity compared to traditional methods.
 
+![Sample-1](https://user-images.githubusercontent.com/4294680/71646298-65308400-2ce6-11ea-9234-2c0e738c3b93.png)
+![Sample-2](https://user-images.githubusercontent.com/4294680/71646319-de2fdb80-2ce6-11ea-97fa-cc63f58bbb5e.png)
 
 # Contributing
 If you have ideas on improving model performance, adding metrics, or any other changes, please make a pull request or open an issue. I'd be happy to accept any contributions.
